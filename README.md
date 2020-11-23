@@ -11,6 +11,6 @@ This project is the collection of HackerRank and LeetCode Problems
 Pull your file follow the following rules:
 * **Format**: c++ code, with the link commented on top
 
-* **File name**: (Question type)-(Difficulty)-(Number Of File).cpp
+* **File name**: (Question type)-(Difficulty)-(Name of Question).cpp
 
   * **Example**: `Array-Easy-Left Rotation.cpp`
