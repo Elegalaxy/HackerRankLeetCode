@@ -80,21 +80,22 @@ void print_codes_hidden(node * root, string code, map<char, string>&mp) {
         
 }
 
+//Real function
 void decode_huff(node * root, string s) {
-    node *temp = root;
-    for(int i = 0; i < s.length(); i++){
+    node *temp = root; //Set a node for traverse
+    for(int i = 0; i < s.length(); i++){ //Loop through every characters
         switch(s[i]){
             case '0':
-                temp = temp->left;
+                temp = temp->left; //If 0, go left
                 break;
             case '1':
-                temp = temp->right;
+                temp = temp->right; //If 1, go right
                 break;
         }
         
-        if(temp->left == nullptr && temp->right == nullptr){
-            cout << temp->data;
-            temp = root;
+        if(temp->left == nullptr && temp->right == nullptr){ //If this is leaf node
+            cout << temp->data; //Cout data
+            temp = root; //Reset node
         }
     }
 }
